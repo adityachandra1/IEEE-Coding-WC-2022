@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t,x,y,res1,res2;
+	cin>>t;
+	while(t--){
+	cin>>x>>y;
+	res1=x/9+1;
+	if(x%9==0)
+	res1--;
+	res2=y/9+1;
+	if(y%9==0)
+	res2--;
+	if(res1<res2)
+	cout<<"0 "<<res1<<"\n";
+	else 
+	cout<<"1 "<<res2<<"\n";
+	}
+	return 0;
+}
